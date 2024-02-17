@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-1 |  Rafay Malik</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box-container{
+            margin-top: 80px;
+            display: flex;
+            margin-left: -13%;
+        }
+        section{
+            padding-left: 25%;
+             }
+        .box{
+            display: flex;
+            cursor: pointer;
+        }
+        .box div{
+            margin-top: -34px;
+            width: 70px;
+            height: 70px;
+            display: flex;
+            background-color: white;
+        }
+        .box{
+            margin-bottom: 12px;
+        }
+        body h1{
+            color: black;
+            font-family: sans-serif;
+            margin-top: 30px;
+            text-align: center;
+            font-size: 50px;
+        }
+        .button{
+            border: 6px black solid;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        #box1{
+            background-color: #FF0000;
+        }
+        #box2{
+            background-color: #FFA000;
+        }        
+        #box3{
+            background-color: #6D1B7B;
+        }
+        #box4{
+            background-color: #64DD17;
+        }        
+        #box5{
+            background-color: #212C6F;
+        }
+        #box6{
+            background-color: #00C853;
+        }
+        #box7{
+            background-color: #115293;
+        }
+        #box8{
+            background-color: #1C44B2;
+        }        
+        #box9{
+            background-color: #E64A19;
+        }
+        #box10{
+            background-color: #008C3A;
+        }        
+        #box11{
+            background-color: #F57C00;
+        }
+        #box12{
+            background-color: #FFD600;
+        }
+        #div2{
+            background-color: #ffffff;
+            width: 674px;
+            margin-top: 24px;
+            height: 375px;
+            position: relative;
+            left: 3.2vw;
+            top: 1.8vh;
+            border-radius: 100px;
+            border: solid black 13px;
+            box-shadow: 0px 12px black;
+        }
+        .div-img{
+            display: flex;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <h1>COLOR CHANGER PROJECT | CREATED BY RAFAY MALIK</h1>
+    <section>
+        <div class="box-container">
+        <div class="box">
+            <div class="button" id="box1"></div>
+            <div class="button" id="box2"></div>
+        </div>
+        <div class="box">
+            <div class="button" id="box3"></div>
+            <div class="button" id="box4"></div>
+        </div>
+        <div class="box">
+            <div class="button" id="box5"></div>
+            <div class="button" id="box6"></div>
+        </div>
+        <div class="box">
+            <div class="button" id="box7"></div>
+            <div class="button" id="box8"></div>
+        </div>
+        <div class="box">
+            <div class="button" id="box9"></div>
+            <div class="button" id="box10"></div>
+        </div>
+        <div class="box">
+            <div class="button" id="box11"></div>
+            <div class="button" id="box12"></div>
+        </div>
+    </div>
+    <div class="div-img">
+        <!-- <div id="div1"><img src="./R.png" alt=""></div> -->
+        <div class="boxai" id="div2"></div>
+    </div>
+    </section>
+</body>
+<script>
+    const buttons = document.querySelectorAll('.button')
+    const boxa = document.querySelector('.boxai')
+    buttons.forEach(function(button){
+        console.log(button);
+        button.addEventListener('click',function(event){
+            console.log(event);
+            console.log(event.target);
+            if(event.target.id === 'box1'){
+                 boxa.style.backgroundColor = '#FF0000';
+            }            
+            if(event.target.id === 'box2'){
+                 boxa.style.backgroundColor = '#FFA000';
+            }            
+            if(event.target.id === 'box3'){
+                 boxa.style.backgroundColor = '#6D1B7B';
+            }            
+            if(event.target.id === 'box4'){
+                 boxa.style.backgroundColor = '#64DD17';
+            }
+            if(event.target.id === 'box5'){
+                 boxa.style.backgroundColor = '#212C6F';
+            }
+            if(event.target.id === 'box6'){
+                 boxa.style.backgroundColor = '#00C853';
+            }
+            if(event.target.id === 'box7'){
+                 boxa.style.backgroundColor = '#115293';
+            }
+            if(event.target.id === 'box8'){
+                 boxa.style.backgroundColor = '#1C44B2';
+            }
+            if(event.target.id === 'box9'){
+                 boxa.style.backgroundColor = '#E64A19';
+            }
+            if(event.target.id === 'box10'){
+                 boxa.style.backgroundColor = '#008C3A';
+            }
+            if(event.target.id === 'box11'){
+                 boxa.style.backgroundColor = '#F57C00';
+            }
+            if(event.target.id === 'box12'){
+                 boxa.style.backgroundColor = '#FFD600';
+            }
+
+        })
+    });
+    
+</script>
+</html>
